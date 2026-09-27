@@ -1,47 +1,16 @@
-# Mustapha Khalil — Portfolio Website
+# Mustapha Khalil — Product Leadership Portfolio
 
-A single-file, static portfolio site (`index.html`). No build step, no dependencies beyond a Google Fonts stylesheet link — just open it in a browser or host it as-is.
+Static, responsive portfolio site prepared for GitHub Pages.
 
-## Publish it on GitHub Pages (free hosting)
+## Publish with GitHub Pages
+1. Create a new GitHub repository.
+2. Upload the contents of this folder to the repository root.
+3. In **Settings → Pages**, choose **Deploy from a branch**.
+4. Select the `main` branch and `/ (root)`, then save.
 
-1. **Create a new repository on GitHub**
-   - Go to [github.com/new](https://github.com/new)
-   - Name it whatever you like — for a *user* site at `https://<your-username>.github.io`, the repo must be named exactly `<your-username>.github.io`. For a *project* site at `https://<your-username>.github.io/<repo-name>`, any repo name works.
-   - Keep it Public (GitHub Pages on the free tier requires a public repo, unless you have GitHub Pro/Team/Enterprise).
-   - Don't initialize it with a README (this folder already has one).
+## Structure
+- `index.html` — complete portfolio site
+- `images/pos-oneview-integrated-flow.png` — POS modernization story visual
+- `images/air-canada-bell-end-to-end-flow.png` — Air Canada × Bell activation journey
 
-2. **Push this folder to the repo**
-   From inside this `portfolio-website` folder, run:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio site"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<repo-name>.git
-   git push -u origin main
-   ```
-
-3. **Turn on GitHub Pages**
-   - In the repo, go to **Settings → Pages**.
-   - Under "Build and deployment", set **Source** to `Deploy from a branch`.
-   - Set **Branch** to `main` and folder to `/ (root)`, then **Save**.
-   - GitHub will give you a live URL in a minute or two (either `https://<your-username>.github.io` or `https://<your-username>.github.io/<repo-name>`).
-
-4. **Optional: custom domain**
-   - Add a `CNAME` file to this folder containing just your domain (e.g. `mustaphakhalil.com`).
-   - Point your domain's DNS at GitHub Pages (an `A` record to GitHub's IPs, or a `CNAME` record to `<your-username>.github.io` for a subdomain).
-   - Enter the domain under **Settings → Pages → Custom domain** and enable "Enforce HTTPS" once it's verified.
-
-## Updating the site later
-
-Edit `index.html`, then:
-```bash
-git add .
-git commit -m "Update site"
-git push
-```
-GitHub Pages redeploys automatically within a minute or two of any push to `main`.
-
-## Files
-
-- `index.html` — the entire site (HTML, CSS, content). Fonts load from Google Fonts via CDN link; everything else is self-contained.
+The site is intentionally dependency-light and needs no build step.
